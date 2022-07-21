@@ -130,13 +130,13 @@ def main(word):
         guessing_letter = input('\n\nDigite uma letra: ')
         game.guess_letter(guessing_letter.upper())
 
-    
     game.update_board()
 
     if game.hangman_won():
         print('\n\nGANHOU\n')
     else:
         print('\n\nGAME OVER\n')
+        print(f'A palavra era: {word}\n')
 
 
 if __name__ == '__main__':
